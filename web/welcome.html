@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="article/article.css?v=3">
+    <title></title>
+</head>
+<body>
+<div class='user'>
+    <div class='header acea-row row-between-wrapper '>
+        <div class='header-have-arrow'>
+            <div class="header-out-style">
+                <div class='picTxt acea-row row-between-wrapper header-display '>
+                    <div class='text'>
+                        <div class='acea-row row-middle name-css'>
+                            <div class='titlehead'>抗疫心理支持系统</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='wrapper'>
+
+        <div class="item_list" onClick="javascript:window.open('https://cmas.aiwac.net/h5/5/线上加油站之“乐眠操” _ 北大六院心理应急救援队致抗击疫情的隔离者系列八.html','_blank')">
+            <div class='nav acea-row row-middle title-padding'>
+                <div class='title acea-row row-middle title-height'>
+
+                    <div class='acea-row row-middle'>
+                        <div class="article-title">
+                            <span>已记录您的身份！即将关闭！</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        setTimeout(function(){
+            //关闭安卓系统
+            document.addEventListener('WeixinJSBridgeReady', function(){
+                WeixinJSBridge.call('closeWindow');
+            }, false);
+            //关闭ios系统
+            WeixinJSBridge.call('closeWindow');
+        }, 3000)
+    </script>
+
+</div>
+</body>
+</html>
